@@ -13,18 +13,18 @@
 <body>
     <h1>The Open Meme Project: Publisher</h1>
     <div class="input-group mb-3">
-        <span class="input-group-text" id="url">URL</span>
-        <input type="text" class="form-control" placeholder="URL" aria-label="Username" aria-describedby="basic-addon1">
+        <span class="input-group-text" id="url-span">URL</span>
+        <input type="text" id="url" class="form-control" placeholder="URL" aria-label="Username" aria-describedby="basic-addon1">
     </div>
     <div class="input-group mb-3">
-        <span class="input-group-text" id="ig">@</span>
-        <input type="text" class="form-control" value="openmemeproject" placeholder="Instagram Username" aria-label="Username" aria-describedby="basic-addon1">
+        <span class="input-group-text" id="ig-span">@</span>
+        <input type="text" class="form-control" id="ig" value="openmemeproject" placeholder="Instagram Username" aria-label="Username" aria-describedby="basic-addon1">
     </div> 
     <div class="input-group mb-3">
-        <span class="input-group-text" id="tw">@</span>
-        <input type="text" class="form-control" value="openmemeproject" placeholder="Twitter Username" aria-label="Username" aria-describedby="basic-addon1">
+        <span class="input-group-text" id="tw-span">@</span>
+        <input type="text" class="form-control" id="tw" value="openmemeproject" placeholder="Twitter Username" aria-label="Username" aria-describedby="basic-addon1">
     </div> 
-    <a href="#submit" onclick="submit">Submit</a>
+    <a href="#submit" onclick="submit()">Submit</a>
     <script>
         function submit() {
             var url = document.getElementById("url").value;
