@@ -24,11 +24,14 @@
         <span class="input-group-text" id="tw">@</span>
         <input type="text" class="form-control" value="openmemeproject" placeholder="Twitter Username" aria-label="Username" aria-describedby="basic-addon1">
     </div> 
+    <a href="#submit" onclick="submit">Submit</a>
     <script>
-        var url = document.getElementById("url").value;
-        var ig = document.getElementById("ig").value;
-        var tw = document.getElementById("tw").value;
-        window.location.replace("https://omp-meme-publisher.herokuapp.com/upload?url=" + url + "&name=" + ig + "&tname=" + tw);
+        function submit() {
+            var url = document.getElementById("url").value;
+            var ig = document.getElementById("ig").value;
+            var tw = document.getElementById("tw").value;
+            window.location.replace("https://omp-meme-publisher.herokuapp.com/upload?url=" + url + "&name=" + ig + "&tname=" + tw);
+        }
     </script>
 </body>
 </html>
