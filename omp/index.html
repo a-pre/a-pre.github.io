@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMP: Preview</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>The Open Meme Project: Publisher</h1>
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="url">URL</span>
+        <input type="text" class="form-control" placeholder="URL" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="ig">@</span>
+        <input type="text" class="form-control" value="openmemeproject" placeholder="Instagram Username" aria-label="Username" aria-describedby="basic-addon1">
+    </div> 
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="tw">@</span>
+        <input type="text" class="form-control" value="openmemeproject" placeholder="Twitter Username" aria-label="Username" aria-describedby="basic-addon1">
+    </div> 
+    <script>
+        var url = document.getElementById("url").value;
+        var ig = document.getElementById("ig").value;
+        var tw = document.getElementById("tw").value;
+        window.location.replace("https://omp-meme-publisher.herokuapp.com/upload?url=" + url + "&name=" + ig + "&tname=" + tw);
+    </script>
+</body>
+</html>
